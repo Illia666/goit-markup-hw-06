@@ -10,8 +10,7 @@
   --background-icon: #f5f4fa;
   --icon-bg-color: rgba(255, 255, 255, 0.1);
   --border-color: #eeeeee;
-  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);;
-
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -108,7 +107,7 @@ body {
   bottom: 0;
 }
 
-.menu-item.active{
+.menu-item.active {
   position: relative;
   color: var(--active-color);
 }
@@ -155,7 +154,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
   fill: var(--icon-color);
-  transition: color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
 }
 
 .nav-contacts-icon {
@@ -178,7 +178,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
   fill: var(--icon-color);
-  transition: color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
 }
 
 .menu-item.active,
@@ -208,8 +209,6 @@ body {
 .phone-number-footer:focus {
   color: var(--active-color);
 }
-
-
 
 /*=========================hero=========================  */
 
@@ -306,11 +305,11 @@ body {
   gap: 30px;
 }
 
-.work-progress-item{
+.work-progress-item {
   position: relative;
 }
 
-.work-progress-text{
+.work-progress-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -327,7 +326,6 @@ body {
 
   background-color: rgba(47, 48, 58, 0.8);
 }
-
 
 /*=========================team=========================  */
 
@@ -384,7 +382,8 @@ body {
   align-items: center;
   justify-content: center;
   fill: var(--icon-color);
-  transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
 }
 
 .team-social-link:hover,
@@ -419,7 +418,8 @@ body {
   align-content: center;
   justify-content: center;
   fill: var(--icon-color);
-  transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
+  transition: fill var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
 }
 
 .clients-link:hover,
@@ -520,7 +520,8 @@ body {
   align-content: center;
   justify-content: center;
   fill: var(--text-primary-color);
-  transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
 }
 
 .social-item-logo {
@@ -653,7 +654,8 @@ body {
   color: var(--text-primary-color);
   background-color: var(--active-color);
   cursor: pointer;
-  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
 }
 
 .modal-btn:hover,
@@ -684,18 +686,18 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  cursor: pointer; 
-   transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func), color var(--transition-dur-and-func);
-
+  cursor: pointer;
+  transition: background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
 }
 
 .button-active:not(:last-child) {
   margin-left: 8px;
 }
 
-
 /* ======MODAL WINDOW========================= */
-.backdrop{
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -703,26 +705,27 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 100;
-  transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
 }
 
-.backdrop.is-hidden{
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-.modal{
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 528px;
   height: 580px;
   background: var(--text-primary-color);
 }
 
-.modal-close-btn{
+.modal-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -735,19 +738,87 @@ pointer-events: none;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-  transition: border-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+  transition: border-color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
 }
 
 .modal-close-btn:hover,
-.modal-close-btn:focus{
-  border-color:var(--active-color);
+.modal-close-btn:focus {
+  border-color: var(--active-color);
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon{
+.modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--active-color);
 }
 
-.modal-close-btn-icon{
+.modal-close-btn-icon {
   transition: fill var(--transition-dur-and-func);
+}
+
+/* form-subscribe */
+
+.footer-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--background);
+}
+
+.form-subscribe .offer {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--background);
+}
+
+.form-subscribe-fields {
+  display: flex;
+  border: none;
+  padding: 0;
+}
+.form-subscribe .form-field {
+  margin-right: 12px;
+}
+
+.form-subscribe .form-input {
+  min-width: 358px;
+  padding: 16px 15px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--background);
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-subscribe .form-input:focus {
+  outline: none;
+  border: 1px solid var(--active-color);
+}
+
+.form-subscribe .form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-subscribe .button-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 29px;
+}
+
+.form-subscribe .button-submit svg {
+  margin-left: 10px;
 }
