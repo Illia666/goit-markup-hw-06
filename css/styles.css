@@ -1024,3 +1024,16 @@ border-radius: 4px;
 .form-subscribe .button-submit svg {
   margin-left: 10px;
 }
+
+.form-link{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: var(--active-color);
+}
+
+.form-link:focus,
+.form-link:hover{
+  color: #074a81;
+}
+
