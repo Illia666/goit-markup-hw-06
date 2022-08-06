@@ -876,9 +876,9 @@ min-width: 200px;
   margin-top: 30px;
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: #188CE8;
+.modal-btn-form:hover,
+.modal-btn-form:focus {
+  background-color: #1472c0;
 }
 
 
@@ -922,34 +922,6 @@ min-width: 200px;
 .form-subscribe .form-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
-.form-subscribe .button-submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 29px;
-}
-
-.form-subscribe .button-submit svg {
-  margin-left: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* form-subscribe */
@@ -1013,16 +985,32 @@ min-width: 200px;
 }
 
 .form-subscribe .button-submit {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.81;
+background-color: var(--active-color);
+color: var(--text-primary-color);
+
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 29px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(230, 13, 13, 0.15);
 border-radius: 4px;
+transition: background-color var(--transition-dur-and-func);
+}
+
+.button-submit:hover, 
+.button-submit:focus{
+  background-color: #0861ab;
+  
 }
 
 .form-subscribe .button-submit svg {
   margin-left: 10px;
+  fill: var(--text-primary-color);
 }
 
 .form-link{
