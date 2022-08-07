@@ -479,11 +479,10 @@ body {
 .footer-address-social {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
-.social {
-  margin-left: 70px;
-}
+
 
 .social-title {
   margin-bottom: 20px;
@@ -770,6 +769,7 @@ min-width: 200px;
 }
 
 .modal-form-input{
+  display: block; 
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -801,6 +801,20 @@ margin-bottom: 4px;
   margin-bottom: 10px;
 }
 
+.label-condition{
+  margin-left: 8.4px;
+}
+
+.modal-form-field-desc{
+  margin-bottom: 20px;
+}
+
+.field-conditions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal-form-input-icon{
   position: absolute;
   top: 50%;
@@ -824,6 +838,7 @@ fill: var(--active-color);
 }
 
 .modal-form-message{
+  display: block; 
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
   resize: none;
@@ -926,9 +941,6 @@ min-width: 200px;
 
 /* form-subscribe */
 
-.footer-subscribe{
-  margin-left: 93px;
-}
 
 .footer-title {
   margin-bottom: 20px;
@@ -985,6 +997,7 @@ min-width: 200px;
 }
 
 .form-subscribe .button-submit {
+  border: none;
   font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
