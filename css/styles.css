@@ -888,7 +888,6 @@ min-width: 200px;
   background-color: var(--active-color);
   cursor: pointer;
   transition: background-color var(--transition-dur-and-func);
-  margin-top: 30px;
 }
 
 .modal-btn-form:hover,
@@ -1038,3 +1037,66 @@ color: var(--active-color);
   color: #074a81;
 }
 
+.modal-form-check-desc {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  align-items: center;
+  line-height: 1.4;
+
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+  transition: background-image 2s linear;
+}
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+  background-color: var(--active-color);
+  border: transparent;
+  background-image: url(../images/check.svg);
+  background-size: 13px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.modal-form-check:focus + .modal-form-check-desc::before {
+  outline: 1px solid var(--active-color);
+  border: none;
+}
+
+.modal-form-check-desc::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  margin-right: 7px;
+  cursor: pointer;
+
+  border: solid 2px var(--title-color);
+  border-radius: 2px;
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.modal-form-check-desc-link {
+  display: inline-block;
+
+  color: var(--active-color);
+  border-bottom: 1px solid var(--active-color);
+}
+
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

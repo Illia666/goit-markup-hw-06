@@ -511,16 +511,19 @@
                 <textarea name="user_massege" class="modal-form-message" placeholder="Введіть текст"></textarea>
               </label>
 
-
-              <label class="form-field field-conditions">
-                <input type="checkbox" class="form-checkbox" name="conditions" />
-                <span class="check-box"></span>
-                <span class="label-condition"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href="#" class="form-link">Условия договора</a></span
-                >
-              </label>
-
+              <input
+              id="user_policy"
+              type="checkbox"
+              name="user_policy"
+              class="modal-form-check visually-hidden"
+            />
+            <label for="user_policy" class="modal-form-check-desc"
+              >Соглашаюсь с рассылкой и принимаю&nbsp;<a
+                href=""
+                class="modal-form-check-desc-link link"
+                >Условия договора</a
+              >
+            </label>
               <button type="submit" class="modal-btn-form">Відправити</button>
             </form>
       </div>
